@@ -23,7 +23,7 @@ class Game
     end
     
     def move(value)
-        puts "Enter value for #{value} on Board"
+        puts "Enter a value from the numeric cells to place #{value}: "
         cell = gets.chomp!.to_i
         if @@board.has_key? cell and write_protect(cell)
             @@board[cell]=value
