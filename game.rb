@@ -1,13 +1,3 @@
-
-=begin
-puts "Enter name for Player one (X)"
-player_x = gets.chomp!
-
-puts "Enter name for Player one (O)"
-player_o = gets.chomp!
-=end
-
-
 class Game
     
     @@board = {1=> '1', 2=> '2', 3=> '3', 4=> '4', 5=> '5', 6=> '6', 7=> '7', 8=> '8', 9=> '9'}
@@ -102,5 +92,4 @@ class Game
 end
 
 game = Game.new
-
 game.play
